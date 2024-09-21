@@ -2,10 +2,15 @@ package com.phonebook.crud.application.implementation;
 
 import java.util.List;
 
-import com.phonebook.crud.domain.Contact;
-import com.phonebook.crud.infrastructure.repository.ContactRepository;
-import com.phonebook.crud.usecase.GetAllContactsUseCase;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+import com.phonebook.crud.application.usecase.GetAllContactsUseCase;
+import com.phonebook.crud.domain.Contact;
+import com.phonebook.crud.domain.ContactRepository;
+
+@Service
 public class GetAllContactUseCaseImpl implements GetAllContactsUseCase {
     private final ContactRepository contactRepository;
 

@@ -1,25 +1,32 @@
 package com.phonebook.crud.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@Entity
 public class Contact {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String phoneNumber;
     private String email;
 
-    /* public Contact() {
-    }
-
-    // Constructor, Getters, and Setters
-    public Contact(Long id, String name, String phoneNumber, String email) {
-        this.id = id;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    } */
+    /*
+     * public Contact() {
+     * }
+     * 
+     * // Constructor, Getters, and Setters
+     * public Contact(Long id, String name, String phoneNumber, String email) {
+     * this.id = id;
+     * this.name = name;
+     * this.phoneNumber = phoneNumber;
+     * this.email = email;
+     * }
+     */
 
     public Long getId() {
         return id;

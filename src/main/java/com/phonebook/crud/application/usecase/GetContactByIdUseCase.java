@@ -1,4 +1,4 @@
-package com.phonebook.crud.usecase;
+package com.phonebook.crud.application.usecase;
 
 import java.util.Optional;
 

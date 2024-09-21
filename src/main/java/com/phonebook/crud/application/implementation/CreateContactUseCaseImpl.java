@@ -1,12 +1,15 @@
 package com.phonebook.crud.application.implementation;
 
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.phonebook.crud.application.usecase.CreateContactUseCase;
 import com.phonebook.crud.domain.Contact;
-import com.phonebook.crud.infrastructure.repository.ContactRepository;
-import com.phonebook.crud.usecase.CreateContactUseCase;
+import com.phonebook.crud.domain.ContactRepository;
+import com.phonebook.crud.infrastructure.dto.CreateContactDto;
 
-public class CreateContactUseCaseImpl  implements CreateContactUseCase {
+@Service
+public class CreateContactUseCaseImpl implements CreateContactUseCase{
     private final ContactRepository contactRepository;
 
     public CreateContactUseCaseImpl(ContactRepository contactRepository) {
@@ -16,6 +19,5 @@ public class CreateContactUseCaseImpl  implements CreateContactUseCase {
     public Contact execute(Contact contact) {
         return contactRepository.save(contact);
     }
-
 
 }

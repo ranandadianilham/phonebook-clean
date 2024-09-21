@@ -1,14 +1,18 @@
 package com.phonebook.crud.application.implementation;
 
-import java.util.List;
 import java.util.Optional;
 
-import com.phonebook.crud.domain.Contact;
-import com.phonebook.crud.infrastructure.repository.ContactRepository;
-import com.phonebook.crud.usecase.GetContactByIdUseCase;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.phonebook.crud.application.usecase.GetContactByIdUseCase;
+import com.phonebook.crud.domain.Contact;
+import com.phonebook.crud.domain.ContactRepository;
+
+@Service
 public class GetContactByIdUseCaseImpl implements GetContactByIdUseCase {
     private final ContactRepository contactRepository;
+
 
     public GetContactByIdUseCaseImpl(ContactRepository contactRepository) {
         this.contactRepository = contactRepository;
