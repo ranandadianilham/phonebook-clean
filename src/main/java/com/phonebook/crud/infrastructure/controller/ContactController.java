@@ -55,7 +55,7 @@ public class ContactController {
         return createContactUseCase.execute(contact);
     }
 
-   /*  @PutMapping("/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Contact> updateContact(@PathVariable Long id, @RequestBody Contact contactDetails) {
         Contact updatedContact = updateContactUseCase.execute(id, contactDetails);
         return updatedContact != null ? ResponseEntity.ok(updatedContact) : ResponseEntity.notFound().build();
@@ -65,5 +65,5 @@ public class ContactController {
     public ResponseEntity<Void> deleteContact(@PathVariable Long id) {
         deleteContactUseCase.execute(id);
         return ResponseEntity.noContent().build();
-    } */
+    }
 }
