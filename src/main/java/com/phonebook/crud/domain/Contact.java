@@ -1,12 +1,17 @@
 package com.phonebook.crud.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 public class Contact {
+
     private Long id;
     private String name;
     private String phoneNumber;
     private String email;
 
-    public Contact() {}
+    /* public Contact() {
+    }
 
     // Constructor, Getters, and Setters
     public Contact(Long id, String name, String phoneNumber, String email) {
@@ -14,7 +19,7 @@ public class Contact {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
-    }
+    } */
 
     public Long getId() {
         return id;
@@ -48,4 +53,3 @@ public class Contact {
         this.email = email;
     }
 }
-
