@@ -2,7 +2,6 @@ package com.phonebook.crud.application.implementation;
 
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.phonebook.crud.application.usecase.GetContactByIdUseCase;

@@ -1,10 +1,13 @@
-Directory:
+# Phonebook
+
+directory:
+
 - Application layer
     /application/implementation
         contain service for contacts, separated for each actions
     /application/usecase
         interface for implementaion
-- domain layer 
+- domain layer
     /domain
         contain domain model and contact repo interface
 - Presentation layer

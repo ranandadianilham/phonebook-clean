@@ -1,6 +1,5 @@
 package com.phonebook.crud.application.implementation;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.phonebook.crud.application.usecase.DeleteContactUseCase;

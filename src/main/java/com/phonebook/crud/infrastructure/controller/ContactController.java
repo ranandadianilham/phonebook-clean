@@ -7,7 +7,6 @@ import com.phonebook.crud.application.implementation.GetContactByIdUseCaseImpl;
 import com.phonebook.crud.application.implementation.UpdateContactUseCaseImpl;
 
 import com.phonebook.crud.domain.Contact;
-import com.phonebook.crud.infrastructure.dto.CreateContactDto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
